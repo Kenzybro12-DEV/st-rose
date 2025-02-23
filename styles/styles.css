@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f4f4f4;
+    padding: 20px; /* Creates space around the page */
+}
+
+.sidebar {
+    width: 250px;
+    background: #ff66b2;
+    height: 95vh; /* Slightly smaller to create spacing */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    position: fixed; /* Keeps it in place */
+    left: 20px; /* Moves it away from the edge */
+    top: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 20px;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    margin-bottom: 20px; /* Adds space between menu items */
+}
+
+.nav-item i, .nav-item svg {
+    margin-right: 10px; /* Adds space between icon and text */
+    vertical-align: middle;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.logout {
+    margin-top: auto;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.logout:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    margin-left: 290px; /* Adjusted for sidebar spacing */
+}
+
+.top-bar {
+    position: absolute; /* Positions it freely */
+    top: 20px; /* Aligns with the sidebar top */
+    left: 300px; /* Moves it next to the sidebar */
+    width: calc(100% - 340px); /* Adjusts width dynamically */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.top-bar input {
+    padding: 8px 50px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grade-level {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.welcome-card {
+    background: #ff66b2;
+    padding: 30px 50px; /* Adjust padding for better spacing */
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Aligns text & icon properly */
+    margin-top: 50px;
+    width: 80%; /* Adjusts width to fit like the image */
+}
+
+.date {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.greetings {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.updated {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+.welcome-icon {
+    font-size: 50px; /* Adjust icon size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Takes full height of the card */
+    margin-left: auto; /* Pushes it to the right */
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+}
+
+.date {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+.subtitle {
+    font-size: 14px;
+}
+
+.activity-title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
